@@ -1,0 +1,163 @@
+.mainfooter {
+  background: #f4f1f1;
+  padding: 40px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  align-items: center;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.footer h2 {
+  font-weight: bolder;
+}
+
+.fcard {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.footerbl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer_l{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.footerlinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footerlinks a {
+  color: black;
+}
+
+.footerbl a {
+  color: rgb(75, 73, 73);
+}
+
+.footer_r {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.inputfield {
+  display: flex;
+  height: 40px;
+  gap: 13px;
+  margin-top: 20px;
+}
+
+.finput {
+  padding: 10px;
+  width: 300px;
+}
+
+.subcribebody {
+  margin-top: 20px;
+}
+
+.p2 {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .mainfooter{
+    display: none;
+  }
+  /* .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer_r {
+    width: 100%;
+  }
+
+  .finput {
+    width: 100%;
+  }
+
+  .inputfield {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footerbl, .footerlinks {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .footerbl p {
+    margin-bottom: 10px;
+  } */
+}
+
+@media screen and (max-width: 600px) {
+  .mainfooter{
+    display: none;
+  }
+  /* .mainfooter {
+    padding: 20px;
+  }
+
+  .footer_r {
+    margin: 0;
+  }
+
+  .finput {
+    width: 100%;
+  }
+
+  .inputfield {
+    gap: 10px;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  .p {
+    font-size: 12px;
+  }
+
+  .p2 {
+    font-size: 10px;
+  }
+
+  .h2 {
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+
+  .footerbl, .footerlinks {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .footerbl p {
+    margin-bottom: 10px;
+  } */
+}

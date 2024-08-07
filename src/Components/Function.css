@@ -1,0 +1,19 @@
+.function{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(231, 228, 228);
+    padding: 50px;
+}
+
+.dropdown{
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.items{
+    font-size: 18px;
+    font-weight: bold;
+}

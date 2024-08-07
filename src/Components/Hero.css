@@ -1,0 +1,52 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 580px;
+  width: 100%;
+}
+
+.heroimage {
+  height: 450px;
+  width: 100%;
+}
+
+.heroimage img {
+  height: 450px;
+  width: 100%;
+  object-fit: cover; /* or use fill for the whole image */
+}
+
+.herop {
+  font-size: 20px;
+  padding: 45px;
+  color: #848484;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero {
+    height: auto; /* Allow height to adjust automatically */
+  }
+
+  .heroimage {
+    height: auto; /* Allow height to adjust automatically */
+  }
+
+  .heroimage img {
+    height: auto;
+    width: 100%;
+    object-fit: cover; /* Ensure the image covers the area properly */
+  }
+
+  .herop {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .herop {
+    font-size: 14px; /* Further adjust font size for very small screens */
+    padding: 15px; /* Further reduce padding for very small screens */
+  }
+}

@@ -1,0 +1,88 @@
+.Product {
+  border: 2px solid rgb(205, 200, 200);
+  border-radius: 10px;
+  width: 250px;
+  height: 400px; /* Fixed height */
+  overflow: hidden;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure space is distributed evenly */
+}
+
+.Product img {
+  height: 170px; /* Fixed height for the image */
+  width: 100%;
+  object-fit: cover;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  height: 35px;
+  width: 100%; /* Make button take the full width of the card */
+  background-color: #41463d;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.product-description {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  /* word-wrap: break-word; */
+}
+
+.brand {
+  font-size: 15px;
+  color: #b1b0b0;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* @media (max-width: 768px) {
+  .Product {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .Product{
+    height: 300px;
+    width: 150px;
+    
+  }
+} */
+
+@media (max-width: 768px) {
+  .Product {
+    width: 48%; /* Adjust width to 48% to fit two products side by side with some gap */
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .ProductContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

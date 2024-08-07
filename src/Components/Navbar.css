@@ -1,0 +1,130 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between; /* Adjusted to space-between for better control */
+  border-bottom: 1px solid rgb(231, 228, 228);
+  align-items: center;
+  padding: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.Navbar h4 {
+  font-size: 35px;
+  margin: 0;
+  flex-shrink: 0; /* Prevent shrinking of the logo */
+}
+
+.cart {
+  font-size: 35px;
+  border: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.cart i {
+  background-color: white;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Allow search box to grow */
+  max-width: 600px;
+  padding: 0 10px;
+}
+
+.searchBox input {
+  width: 100%; /* Make the input take full width of the container */
+  padding: 13px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  background-color: #f6f6f6;
+  color: #848484;
+}
+
+.searchBox button {
+  padding: 13px;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  background-color: #f6f6f6;
+}
+
+.hamberger{
+  font-size: 25px;
+  border: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .Navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 10px;
+  }
+
+  .Navbar h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .searchBox {
+    width: 100%; /* Make search box full width */
+    padding: 0;
+  }
+
+  .searchBox input {
+    width: 100%; /* Full width for input */
+    padding: 10px;
+  }
+
+  .searchBox button {
+    padding: 10px;
+  }
+
+  .cart {
+    font-size: 30px;
+    align-self: flex-end; /* Align cart button to the end */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .searchBox{
+    width: fit-content;
+    justify-content: flex-end;
+  }
+
+  .searchBox input {
+    display: none;
+  }
+
+  .searchBox button {
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cart {
+    font-size: 25px;
+  }
+
+  .hamberger{
+    font-size: 25px;
+    border: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+}

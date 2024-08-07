@@ -1,0 +1,21 @@
+.linksContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+} 
+
+.linksContainer a{
+    color: rgb(75, 73, 73);
+    text-decoration: none;
+}
+
+.linksContainer h2{
+    font-weight: bolder;
+} 
+
+@media screen and (max-width: 600px) {
+    .linksContainer h2{
+        font-size: 15px;
+    }
+}
